@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>imgMagnifier 图片放大器 | 樊小书生的博客</title>
+    <meta name="keywords" content="樊小书生的博客,fxss-rate评分插件">
+    <meta name="description" content="樊小书生的博客专注于web前端学习的分享">
+    <link rel="stylesheet" href="http://www.fxss5201.cn/project/css/normalize.css">
+    <link rel="stylesheet" href="http://www.fxss5201.cn/project/layui/css/layui.css">
+    <link rel="stylesheet" href="http://www.fxss5201.cn/project/css/hybrid.css">
+    <style>
+        html {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    
+        body {
+            font-family: "Helvetica Neue", "Microsoft YaHei", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+    
+        .head {
+            text-align: center;
+            line-height: 80px;
+        }
+    
+        .h2-title {
+            text-align: left;
+            line-height: 38px;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+    
+        .h3-title {
+            line-height: 28px;
+        }
+    
+        .margin-bottom-5 {
+            margin-bottom: 5px;
+        }
+    
+        .site-title {
+            margin: 15px 0;
+        }
+    
+        .paragraph {
+            margin-bottom: 8px;
+        }
+    
+        .padding-left-20 {
+            padding-left: 20px;
+        }
+    </style>
+    <script src="http://www.fxss5201.cn/project/js/jquery-1.11.3.js"></script>
+    <script src="http://www.fxss5201.cn/project/layui/layui.all.js"></script>
+    <script src="http://www.fxss5201.cn/project/js/highlight.pack.js"></script>
+    <script src="imgMagnifier.js"></script>
+</head>
+<body>
+    <div class="layui-container">
+        <h1 class="head">imgMagnifier 图片放大器</h1>
+        <hr>
+        <h2 class="h2-title">1、演示</h2>
+        <div class="paragraph padding-left-20">
+            <div class="layui-row">
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4">
+                    <div id="imgBox">
+                        <img id="imgTarget" src="head-img.jpg" style="width: 100%;">
+                    </div>
+                    <script>
+                        $("#imgBox").imgMagnifier({
+                            src: $("#imgTarget").attr("src"),
+                            
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
